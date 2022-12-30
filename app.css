@@ -17,7 +17,7 @@ body{
 .main{
     max-width: 376px;
     margin:2em auto 2em auto;
-    border: 1px solid hsl(270, 3%, 87%);;
+    border: 1px solid hsl(270, 3%, 87%);
 
 }
 .top-div{
@@ -231,5 +231,110 @@ span{
     letter-spacing: 0.1em;
     color:hsl(279, 6%, 55%);
     
+}
+
+
+@media screen and (min-width: 1024px) {
+   .main{
+    display: flex;
+    flex-direction: row;
+    max-width:1024px;
+    margin:4em auto 2em auto;
+    border: 1px solid hsl(270, 3%, 87%);
+   }
+   .top-div{
+    width:30%;
+    background-image: url('images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    height:30em;
+   }
+   .bottom-div{
+    width:70%;
+    padding-top:7em;
+    padding-left:10em;
+    padding-right:10em;
+    padding-bottom:7em;
+    display: none;
+   }
+   .front{
+    width:125%;
+    height:9em;
+    position: relative;
+    top:6.5em;
+    left:5.5em;
+    z-index: 2;
+    }
+    .credentials{
+        position:relative;
+        width:125%;
+        z-index: 3;
+        top:-2.9em;
+        left:5.5em;
+        height:9em;
+        padding:1em;
+        padding-top:1.5em;
+    }
+    .back{
+        width:125%;
+        height:9em;
+        position: relative;
+        top:7.8em;
+        left:8.1em;
+        z-index: 1;
+    }
+    .back-div h2{
+        font-size: 0.6em;
+        text-transform: uppercase;
+        font-weight: 500;
+        z-index: 2;
+        position: relative;
+        top:4.3em;
+        left:34em;
+        color:hsl(0, 0%, 100%);
+    }
+
+    /* Complete State */
+    .complete-div{
+        width:75%;
+        padding-top:3em;
+        padding-left:10em;
+        padding-right:10em;
+        padding-bottom:5.5em;
+        text-align: center;
+        display: block;
+        border: 1px solid red;
+
+    /* display: none; */
+    }
+    .complete-div img{
+        width:3em;
+        display:block
+    }
+    /* .complete-div h2{
+        margin-top:1em;
+        font-family: 'Space Grotesk', sans-serif;
+        letter-spacing: 0.2em;
+        font-size: 1em;
+        text-transform: uppercase;
+        color:hsl(278, 68%, 11%);
+    } */
+    /* .complete-div p{
+        margin-top:1em;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size:0.7em;
+        letter-spacing: 0.1em;
+        color:hsl(279, 6%, 55%);
+        
+    } */
+    button{
+        margin-top:2em;
+        /* padding:0.8em; */
+        border-radius:8px;
+        background-color: hsl(278, 68%, 11%);
+        /* background-color: hsl(278, 68%, 11%); */
+        color: hsl(0, 0%, 100%);
+        font-family: 'Space Grotesk', sans-serif;
+        cursor: pointer;
+    }
 }
 

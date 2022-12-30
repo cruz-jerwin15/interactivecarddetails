@@ -127,13 +127,14 @@ completeBtn.addEventListener('click',()=>{
 
 const completeContinue=()=>{
     if(!isSubmit){
-        bottom.style.display="inherit";
+        bottom.style.display="block";
         complete.style.display="none";
     }else{
         bottom.style.display="none";
-        complete.style.display="inherit";
+        complete.style.display="block";
     }
 }
+
 
 
 
