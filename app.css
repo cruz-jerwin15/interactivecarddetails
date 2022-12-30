@@ -79,6 +79,7 @@ body{
     color:hsl(0, 0%, 100%);
     font-weight: 500;
 }
+
 .back-div{
     width:75%;
     height:9em;
@@ -107,6 +108,7 @@ body{
     padding-left:1.5em;
     padding-right:1.5em;
     padding-bottom:2em;
+    /* display:none; */
 }
 .form-data label:nth-of-type(1){
     font-size:0.7em;
@@ -198,4 +200,36 @@ span{
     font-size:0.6em;
     width:50%;
     display:none;
+    color:hsl(0, 100%, 66%);
 }
+
+/* Complete State */
+.complete-div{
+    width:100%;
+    padding-top:3em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    padding-bottom:5.5em;
+    text-align: center;
+    display: none;
+}
+.complete-div img{
+    width:3em;
+}
+.complete-div h2{
+    margin-top:1em;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 1em;
+    text-transform: uppercase;
+    color:hsl(278, 68%, 11%);
+}
+.complete-div p{
+    margin-top:1em;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size:0.7em;
+    letter-spacing: 0.1em;
+    color:hsl(279, 6%, 55%);
+    
+}
+
