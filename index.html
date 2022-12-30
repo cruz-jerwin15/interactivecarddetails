@@ -46,6 +46,7 @@
             name="holder-name"
             id="holder-name"
           />
+          <span>Can't be blank</span>
           <label for="card-number">Card Number</label>
           <input
             type="text"
@@ -53,21 +54,40 @@
             name="card-number"
             id="card-number"
           />
-          <label for="expire-date">Exp. Date (MM/YY) MM YY</label>
-          <input
-            type="text"
-            placeholder="MM"
-            name="expire-date"
-            id="expire-date"
-          />
-          <input
-            type="text"
-            placeholder="YY"
-            name="expire-year"
-            id="expire-year"
-          />
-          <label for="cvc">CVC</label>
-          <input type="text" placeholder="e.g. 123" name="cvc" id="cvc" />
+          <span>Wrong format, numbers only</span>
+          <div class="lower-label">
+            <div class="label">
+              <label for="expire-date">Exp. Date (MM/YY)</label>
+            </div>
+            <div class="label">
+              <label for="cvc">CVC</label>
+            </div>
+          </div>
+
+          <div class="lower-label">
+            <div class="input">
+              <input
+                type="text"
+                placeholder="MM"
+                name="expire-date"
+                id="expire-date"
+              />
+              <input
+                type="text"
+                placeholder="YY"
+                name="expire-year"
+                id="expire-year"
+              />
+            </div>
+            <div class="input">
+              <input type="text" placeholder="e.g. 123" name="cvc" id="cvc" />
+            </div>
+          </div>
+          <div class="lower-label">
+            <span>Can't be blank</span>
+            <span>Can't be blank</span>
+          </div>
+
           <button type="submit">Confirm</button>
         </form>
       </div>
