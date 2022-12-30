@@ -65,8 +65,8 @@ cardform.addEventListener('submit',(e)=>{
         } 
     }
     let expire=0;
-    if((months)&&(months.trim().length>0)&&(!isNaN(months))){
-        span[2].style.display="none";
+    if((months)&&(months.trim().length>0)&&(!isNaN(months))&&(months.length==2)&&(months<=12)){
+       
         expiredate.style.borderColor="hsl(270, 3%, 87%)";
         expire++;
     }else{
@@ -74,12 +74,14 @@ cardform.addEventListener('submit',(e)=>{
         expiredate.style.borderColor="hsl(0, 100%, 66%)";
         if(isNaN(months)){
             span[2].innerText="Wrong format, numbers only";
+        }else if((months.length!=2)||(months>12)){
+            span[2].innerText="Wrong format, 01 to 12";
         }else{
             span[2].innerText="Can't be blank";
         } 
     }
-    if((years)&&(years.trim().length>0)&&(!isNaN(years))){
-        span[2].style.display="none";
+    if((years)&&(years.trim().length>0)&&(!isNaN(years))&&(years.length==2)){
+        
         expireyear.style.borderColor="hsl(270, 3%, 87%)";
         expire++;
     }else{
@@ -87,6 +89,8 @@ cardform.addEventListener('submit',(e)=>{
         expireyear.style.borderColor="hsl(0, 100%, 66%)";
         if(isNaN(years)){
             span[2].innerText="Wrong format, numbers only";
+        }else if(years.length!=2){
+            span[2].innerText="Wrong format, 00 - 99";
         }else{
             span[2].innerText="Can't be blank";
         } 
@@ -95,10 +99,11 @@ cardform.addEventListener('submit',(e)=>{
     if(expire>=2){
         let expiration = `${months}/${years}`;
         expired.innerText=expiration;
+        span[2].style.display="none";
         step++;
     }
-
-    if((pass)&&(pass.trim().length>0)&&(!isNaN(pass))){
+    
+    if((pass)&&(pass.trim().length>0)&&(!isNaN(pass))&&(pass.length==3)){
         span[3].style.display="none";
         cvc.style.borderColor="hsl(270, 3%, 87%)";
         displaycvc.innerText=pass;
@@ -108,6 +113,8 @@ cardform.addEventListener('submit',(e)=>{
         cvc.style.borderColor="hsl(0, 100%, 66%)";
         if(isNaN(pass)){
             span[3].innerText="Wrong format, numbers only";
+        }else if(pass.length!=3){
+            span[3].innerText="CVC must be 3 digits";
         }else{
             span[3].innerText="Can't be blank";
         } 

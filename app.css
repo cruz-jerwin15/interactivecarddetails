@@ -254,7 +254,6 @@ span{
     padding-left:10em;
     padding-right:10em;
     padding-bottom:7em;
-    display: none;
    }
    .front{
     width:125%;
@@ -301,31 +300,34 @@ span{
         padding-right:10em;
         padding-bottom:5.5em;
         text-align: center;
-        display: block;
-        border: 1px solid red;
+        display: none;
+        /* border: 1px solid red; */
 
     /* display: none; */
     }
     .complete-div img{
         width:3em;
-        display:block
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:6em;
+        display:block;
     }
-    /* .complete-div h2{
+    .complete-div h2{
         margin-top:1em;
         font-family: 'Space Grotesk', sans-serif;
         letter-spacing: 0.2em;
         font-size: 1em;
         text-transform: uppercase;
         color:hsl(278, 68%, 11%);
-    } */
-    /* .complete-div p{
+    }
+    .complete-div p{
         margin-top:1em;
         font-family: 'Space Grotesk', sans-serif;
         font-size:0.7em;
         letter-spacing: 0.1em;
         color:hsl(279, 6%, 55%);
         
-    } */
+    }
     button{
         margin-top:2em;
         /* padding:0.8em; */
